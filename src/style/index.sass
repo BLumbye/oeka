@@ -1,0 +1,88 @@
+@import "./variables"
+  
+// General restyling
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font: $font-body
+  color: $dark
+
+html
+  min-height: 100%
+  overflow: auto
+  overflow-x: hidden
+  position: relative
+
+body, #app
+  min-height: 100%
+
+body, html, #app
+  width: 100vw
+
+blockquote
+  font: $font-quote
+  padding: 0
+  margin: 0
+
+h1.huge
+  font: $font-heading-huge
+  padding: 0
+  margin: 0
+
+h1
+  font: $font-heading-1
+  padding: 0
+  margin: 0
+
+h2
+  font: $font-heading-2
+  padding: 0
+  margin: 0
+
+h3
+  font: $font-heading-3
+  padding: 0
+  margin: 0
+
+h4
+  font: $font-heading-4
+  padding: 0
+  margin: 0
+
+h5
+  font: $font-body
+  font-weight: bold
+  font-size: 18px
+
+a
+  text-decoration: none
+
+::selection
+  background: transparentize($primary-color, .6)
+
+// Fonts
+@font-face
+  font-family: "Nunito"
+  src: url("../assets/font/Nunito-Regular.woff2"), url("../assets/font/Nunito-Regular.ttf")
+  font-weight: 400
+  font-display: swap
+
+@font-face
+  font-family: "Nunito"
+  src: url("../assets/font/Nunito-Italic.woff2"), url("../assets/font/Nunito-Italic.ttf")
+  font-weight: 400
+  font-style: italic
+  font-display: swap
+
+@font-face
+  font-family: "Nunito"
+  src: url("../assets/font/Nunito-Bold.woff2"), url("../assets/font/Nunito-Bold.ttf")
+  font-weight: 700
+  font-display: swap
+
+@font-face
+  font-family: "Nunito"
+  src: url("../assets/font/Nunito-Black.woff2"), url("../assets/font/Nunito-Black.ttf")
+  font-weight: 900
+  font-display: swap

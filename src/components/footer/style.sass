@@ -1,0 +1,34 @@
+@import "../../style/variables"
+
+.footer
+  width: 100%
+  height: 150px
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  background-color: $dark
+  position: absolute
+  bottom: 0
+  padding: 32px 64px
+
+  div
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+
+    &:nth-child(2)
+      text-align: center
+
+    &:nth-child(3)
+      text-align: right
+
+    p
+      color: $light
+      font-size: 13px
+
+    a
+      color: $primary-color
+      text-decoration: none
+      font-size: 13px
+
+      &.noColor
+        color: inherit

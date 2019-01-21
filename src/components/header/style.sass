@@ -1,0 +1,52 @@
+@import "../../style/variables"
+	
+.header
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	height: 86px
+	background: white
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+	z-index: 50
+	display: flex
+	justify-content: space-between
+
+	&.hidden
+		display: none
+
+	h1
+		padding: 0 16px
+		font: $font-heading-3
+		line-height: 86px
+		margin: 0
+		display: inline-block
+		vertical-align: middle
+	
+	img
+		display: inline-block
+		line-height: 86px
+		width: 60px
+		height: 60px
+		margin-left: 32px
+		vertical-align: middle
+
+.header nav
+	margin-right: 32px
+
+.header nav a
+	display: inline-block
+	height: 86px
+	line-height: 86px
+	padding: 0 16px
+	min-width: 100px
+	text-align: center
+	text-decoration: none
+	font-size: 20px
+	transition: transform 200ms cubic-bezier(0.44, 0.13, 0.4, 1.8)
+
+	&:hover, &:focus, &.active
+    transform: scale(1.1)
+
+.header nav a.active
+	font-weight: 700

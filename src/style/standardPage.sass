@@ -1,0 +1,81 @@
+@import "./variables"
+
+body
+	background-color: $gray
+
+.home
+  width: 100%
+  max-width: 1400px
+  margin: 0 auto
+  width: 90vw
+  padding:
+    left: 64px
+    right: 64px
+    top: 16px + 86px
+    bottom: 150px + 32px
+
+  @media screen and (max-width: $break-large)
+    padding:
+      left: 32px
+      right: 32px
+
+.pageTitle
+	font: $font-heading-huge
+
+.content
+	display: flex
+	justify-content: space-between
+
+.main
+	flex: 1
+	background-color: $light
+	border-radius: 20px
+	padding: 32px 64px
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2)
+
+.navigation
+  width: 300px
+  padding-right: 32px
+
+  div
+    width: 100%
+    background-color: $light
+    border-radius: 20px
+    padding: 24px
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2)
+  
+  h3
+    text-align: center
+
+  a
+    display: block
+    width: fit-content
+    margin: 4px 0
+    transition: color 50ms
+
+    &:hover
+      color: $primary-color
+
+    &.active
+      font-weight: bold
+
+.sidebar
+  width: 300px
+  padding-left: 32px
+
+  & > div
+    width: 100%
+    background-color: $light
+    border-radius: 20px
+    padding: 24px
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2)
+
+  @media screen and (max-width: $break-large)
+    display: none
+
+hr
+  margin: 16px 0
+  border: 1px solid transparentize($dark, 0.75)
+
+.readMore
+  color: $primary-color

@@ -1,0 +1,42 @@
+@import "../../style/variables"
+  
+.login
+  text-align: center
+
+  h2
+    font: $font-heading-3
+  
+  input[type="email"], input[type="password"]
+    @extend %input-field
+    display: block
+    width: 100%
+    margin: 16px 0
+    font: $font-body
+
+  .rememberPass
+    text-align: left
+
+    .label
+      vertical-align: middle
+
+  button
+    @extend %button
+    width: 100%
+    margin: 20px 0
+  
+  .links
+    a
+      display: block
+      transition: color 50ms
+
+      &:hover
+        color: $primary-color
+
+    .line
+      display: block
+      width: 32px
+      height: 2px
+      background-color: $dark
+      opacity: 0.25
+      border-radius: 2px
+      margin: 4px auto
